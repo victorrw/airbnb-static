@@ -4,18 +4,18 @@ fulano:
   city: Placeholder 1
   title: Fulano's home
   description: Fulano's home placeholder description
-  onwer_picture: http://i.pravatar.cc/300"
+  owner_picture: http://i.pravatar.cc/300"
 tilano:
   name: Tilano
   flat_picture: http://lorempixel.com/400/200/city/2/
   city: Placeholder 2
   title: Tilano's home
   description: Tilano's home placeholder description
-  onwer_picture: http://i.pravatar.cc/300"
+  owner_picture: http://i.pravatar.cc/300"
 ciclano:
   name: Ciclano
   flat_picture: http://lorempixel.com/400/200/city/3/
   city: Placeholder 3
   title: Ciclano's home
   description: Ciclano's home placeholder description
-  onwer_picture: http://i.pravatar.cc/300"
+  owner_picture: http://i.pravatar.cc/300"
