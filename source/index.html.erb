@@ -47,39 +47,19 @@ title: Le Wagon Middleman AirBnb challenge
       <div class="container">
         <h2 class="text-center">Your next trip</h2>
         <div class="row">
+          <% data.flats.each do |owner, flat| %>
           <div class="col-xs-12 col-sm-4">
-            <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('http://lorempixel.com/400/200/city/1/');">
-              <div class="card-category">Placeholder city 1</div>
+            <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(' <%= image_path flat.flat_picture %>');">
+              <div class="card-category"><% flat.city %></div>
               <div class="card-description">
-                <h2>Fulano home</h2>
-                <p>Placeholder description 1</p>
+                <h2><%= flat.title %></h2>
+                <p><%= flat.description %></p>
               </div>
-              <img class="card-user avatar avatar-large" src="http://i.pravatar.cc/300">
+              <%= image_tag flat.owner_picture, class: "card-user avatar avatar-large" %>
               <a class="card-link" href="#" ></a>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-4">
-            <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('http://lorempixel.com/400/200/city/2/');">
-              <div class="card-category">Placeholder city 2</div>
-              <div class="card-description">
-                <h2>Tilano</h2>
-                <p>Placeholder description 2</p>
-              </div>
-              <img class="card-user avatar avatar-large" src="http://i.pravatar.cc/300">
-              <a class="card-link" href="#" ></a>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-4">
-            <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('http://lorempixel.com/400/200/city/3/');">
-              <div class="card-category">Placeholder city 3</div>
-              <div class="card-description">
-                <h2>Ciclano home</h2>
-                <p>Placeholder description 3</p>
-              </div>
-              <img class="card-user avatar avatar-large" src="http://i.pravatar.cc/300">
-              <a class="card-link" href="#" ></a>
-            </div>
-          </div>
+          <% end %>
         </div>
       </div>
     </div>
